@@ -1,0 +1,42 @@
+{
+  "name": "frontendTests",
+  "version": "1.0.0",
+  "description": "frontendTests",
+  "author": "Chris Spiking",
+  "license": "ISC",
+  "preferGlobal": false,
+  "private": false,
+  "jspm": {
+    "dependencies": {
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^2.0.1",
+      "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.1",
+      "aurelia-framework": "npm:aurelia-framework@1.1.0",
+      "aurelia-materialize-bridge": "npm:aurelia-materialize-bridge@^0.24.0",
+      "aurelia-pal-browser": "npm:aurelia-pal-browser@^1.1.0",
+      "aurelia-router": "npm:aurelia-router@^1.2.1",
+      "font-awesome": "npm:font-awesome@4.7.0",
+      "materialize": "npm:materialize@^1.0.0",
+      "materialize-css": "npm:materialize-css@^0.98.0",
+      "moment": "npm:moment@2.17.1",
+      "moment-timezone": "npm:moment-timezone@0.5.11",
+      "normalize.css": "github:necolas/normalize.css@5.0.0"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@2.2.1"
+    },
+    "overrides": {
+      "npm:materialize-css@0.98.0": {
+        "main": "dist/js/materialize",
+        "format": "global",
+        "shim": {
+          "js/materialize": {
+            "deps": [
+              "jquery",
+              "../css/materialize.css!"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

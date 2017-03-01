@@ -1,0 +1,12 @@
+skipGeb=false;
+
+// headless, firefox, firefoxLegacy or chrome. (defaults to headless)
+//browserType="chrome"
+//browserType="firefox"
+//browserType="firefoxLegacy"
+browserType="headless"
+
+phantomjsPath = "/Users/chrisspikingdev/work/apps/webdrivers/phantomjs-2.1.1/bin/phantomjs"
+geckoDriverPath = "/Users/chrisspikingdev/work/apps/webdrivers/geckodriver-0.14.0/geckodriver"
+chromeDriverPath = "/Users/chrisspikingdev/work/apps/webdrivers/chromedriver-2.27.0/chromedriver"
+

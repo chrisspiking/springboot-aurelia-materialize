@@ -1,0 +1,13 @@
+<template>
+    <require from="/jspm_packages/npm/materialize-css@0.98.0/dist/css/materialize.css"></require>
+    <form role="form">
+        <select md-select name="selectionBoxThing" class="selectDropDownClass" value.two-way="selectedOption">
+            <option repeat.for="selectionOption of selectionOptions" model.bind="selectionOption">
+                ${selectionOption.valueOne} ${selectionOption.valueTwo}
+            </option>
+        </select>
+    </form>
+    <div>
+        Selected Option : <span class="selectedOptionString">${selectedOption | jsonString}</span>
+    </div>
+</template>

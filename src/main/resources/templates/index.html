@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+        <link type="text/css" rel="stylesheet" th:href="@{/jspm_packages/github/necolas/normalize.css@5.0.0/normalize.css}"/>
+        <link type="text/css" rel="stylesheet" th:href="@{/jspm_packages/npm/font-awesome@4.7.0/css/font-awesome.css}"/>
+
+        <link type="text/css" rel="stylesheet" th:href="@{/css/main.css}"/>
+    </head>
+
+    <body>
+        <form role="form">
+            <div class="input-field col s12">
+                <select name="selectionBoxThing" id="selectionDropDownValue" class="selectDropDownClass">
+                    <option>Hello World!</option>
+                    <option>Option 1</option>
+                    <option>Fred Flintstone</option>
+                    <option>Wilma Flintstone</option>
+                </select>
+                <label>Materialize Select</label>
+            </div>
+            <div>
+                Selected Option : <span id="selectedOptionString"></span>
+            </div>
+        </form>
+    </body>
+</html>

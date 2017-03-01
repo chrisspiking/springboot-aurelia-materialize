@@ -1,0 +1,12 @@
+<template>
+    <form role="form">
+        <select name="selectionBoxThing" class="selectDropDownClass" value.bind="selectedOption">
+            <option repeat.for="selectionOption of selectionOptions" model.bind="selectionOption">
+                ${selectionOption.valueOne} ${selectionOption.valueTwo}
+            </option>
+        </select>
+    </form>
+    <div>
+        Selected Option : <span class="selectedOptionString">${selectedOption | jsonString}</span>
+    </div>
+</template>
