@@ -1,6 +1,6 @@
 <template>
     <form role="form">
-        <select name="selectionBoxThing" class="selectDropDownClass" value.bind="selectedOption">
+        <select md-select name="selectionBoxThing" class="selectDropDownClass" value.two-way="selectedOption">
             <option repeat.for="selectionOption of selectionOptions" model.bind="selectionOption">
                 ${selectionOption.valueOne} ${selectionOption.valueTwo}
             </option>

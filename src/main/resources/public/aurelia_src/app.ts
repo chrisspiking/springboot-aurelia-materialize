@@ -14,8 +14,7 @@ export class App {
 
         config.map([
             {route: 'select-view',  name: 'select-view',  moduleId: './features/select-view/select-view', title: 'Select View', nav: true},
-            {route: 'm-select-view',  name: 'm-select-view',  moduleId: './features/materialize-select-view/select-view', title: 'Materialize Select View', nav: true},
-            {route: '/', redirect: 'm-select-view'}
+            {route: '/', redirect: 'select-view'}
         ]);
 
         config.mapUnknownRoutes(() => {

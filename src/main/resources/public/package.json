@@ -1,7 +1,7 @@
 {
-  "name": "frontendTests",
+  "name": "springboot-aurelia-materialize",
   "version": "1.0.0",
-  "description": "frontendTests",
+  "description": "springboot-aurelia-materialize",
   "author": "Chris Spiking",
   "license": "ISC",
   "preferGlobal": false,

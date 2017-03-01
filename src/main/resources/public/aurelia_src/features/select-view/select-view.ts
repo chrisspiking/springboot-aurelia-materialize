@@ -1,3 +1,5 @@
+import 'materialize-css';
+
 export class SelectView {
 
     private selectedOption: any = null;

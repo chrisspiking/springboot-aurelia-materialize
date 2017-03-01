@@ -10,25 +10,9 @@ import spock.lang.Ignore
 @Ignore
 class SelectionTestSpec extends BaseGebSpec {
 
-    def "Selection box is displayed on index page"() {
-        when:
-        go "/aurelia#/select-view"
-        waitFor { $(".selectedOptionString").displayed }
-
-        then:
-        1 == 1
-
-        when:
-        waitFor { $("FORM").find("SELECT", name: "selectionBoxThing").displayed }
-        $("FORM").find("SELECT", name: "selectionBoxThing").value("Fred Flintstone")
-
-        then:
-        $(".selectedOptionString", 0).text().trim() == "{\"valueOne\":\"Fred\",\"valueTwo\":\"Flintstone\"}"
-    }
-
     def "Aurelia PhantomJS - Selection box is displayed on index page"() {
         when:
-        go "/aurelia#/m-select-view"
+        go "/#/select-view"
         waitFor { $("FORM", role: "form").$("DIV.selectDropDownClass").$("INPUT.select-dropdown").displayed }
 
         then:
@@ -48,7 +32,7 @@ class SelectionTestSpec extends BaseGebSpec {
     @Ignore
     def "Aurelia Firefox - Selection box is displayed on index page"() {
         when:
-        go "/aurelia#/m-select-view"
+        go "/#/select-view"
         waitFor { $("FORM", role: "form").$("DIV.selectDropDownClass").$("INPUT.select-dropdown").displayed }
 
         then:
@@ -66,7 +50,7 @@ class SelectionTestSpec extends BaseGebSpec {
     @Ignore
     def "Aurelia ChromeDriver - Selection box is displayed on index page"() {
         when:
-        go "/aurelia#/m-select-view"
+        go "/#/select-view"
         waitFor { $("FORM", role: "form").$("DIV.selectDropDownClass").$("INPUT.select-dropdown").displayed }
 
         then:
