@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "springboot-aurelia-materialize",
   "author": "Chris Spiking",
-  "license": "ISC",
+  "license": "MIT",
   "preferGlobal": false,
   "private": false,
   "jspm": {
