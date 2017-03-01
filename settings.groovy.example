@@ -1,3 +1,5 @@
+// Please change and rename to settings.groovy for running test cases.
+
 skipGeb=false;
 
 // headless, firefox, firefoxLegacy or chrome. (defaults to headless)

@@ -17,7 +17,6 @@ out/
 *.ipr
 *.iws
 settings.groovy
-settings.gradle
 src/main/resources/public/typings/
 src/main/resources/public/node_modules/
 src/main/resources/public/jspm_packages/
