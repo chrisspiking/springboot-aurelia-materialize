@@ -1,4 +1,4 @@
-package uk.co.bitstyle.fetests;
+package uk.co.bitstyle.sbam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -4,7 +4,7 @@ import geb.driver.CachingDriverFactory
 import geb.spock.GebSpec
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.test.context.SpringBootTest
-import uk.co.bitstyle.fetests.Application
+import uk.co.bitstyle.sbam.Application
 
 /**
  * Base test class to load things correctly.
