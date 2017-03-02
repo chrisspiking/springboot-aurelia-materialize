@@ -10,7 +10,7 @@ export class App {
 
     public configureRouter(config: RouterConfiguration, router: Router): void {
         this.router = router;
-        config.title = 'FrontendTests';
+        config.title = 'Spring Boot Aurelia Materialize';
 
         config.map([
             {route: 'select-view',  name: 'select-view',  moduleId: './features/select-view/select-view', title: 'Select View', nav: true},
